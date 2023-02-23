@@ -1,4 +1,5 @@
 def twoSum(nums: list, target: int):
+    #should return correct
     d = {}
     for i in range(len(nums)):
         d[nums[i]] = i
