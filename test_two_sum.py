@@ -9,7 +9,7 @@ class testTwoSum(unittest.TestCase):
     # https://www.dataquest.io/blog/unit-tests-python/
 
     def test_givenExample(self):
-        msg = "Passed the given example. "
+        msg = "Did not pass the given example. "
         self.assertEqual(twoSum([2,7,11,15], 9), [0,1], msg)
 
     # This is just a template; you can change the format whatever you want to have better communication with the developer. 
