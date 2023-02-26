@@ -12,6 +12,10 @@ class testTwoSum(unittest.TestCase):
         msg = "Did not pass the given example. "
         self.assertEqual(twoSum([2,7,11,15], 9), [0,1], msg)
 
+    def test_givenExample2(self):
+        msg = "Did not pass another random example. "
+        self.assertEqual(twoSum([2,7,11,15], 26), [2,3], msg)
+
     # This is just a template; you can change the format whatever you want to have better communication with the developer. 
     # def test_<write the test name here>(self):
     #     msg = '''<message when there is an error>
