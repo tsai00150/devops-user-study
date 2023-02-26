@@ -13,3 +13,4 @@ def twoSum(nums: list, target: int):
         d[nums[i]] = i
     return [-1]
 twoSum([2,7,11,15],9)
+##d
