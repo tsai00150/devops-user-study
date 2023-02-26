@@ -30,6 +30,14 @@ class testTwoSum(unittest.TestCase):
     def test_givenExample2(self):
         msg = "Return None if array is empty. "
         self.assertEqual(twoSum([], 26), None, msg)
+    
+    def test_givenExample3(self):
+        msg = "Did not pass the given example. "
+        self.assertEqual(twoSum([1,8,11,15], 9), [0,1], msg)
+    
+    def test_givenExample4(self):
+        msg = "Return -1 if there's only one element. "
+        self.assertEqual(twoSum([4], 9), -1, msg)
 
 if __name__ == '__main__':
     unittest.main()
