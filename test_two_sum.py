@@ -19,6 +19,15 @@ class testTwoSum(unittest.TestCase):
     #     '''
     #     self.assertEqual(twoSum(<the nums array>, <target>), [-1], msg)
 
+    def test_givenExample2(self):
+        msg = "Did not pass the given example. "
+        self.assertEqual(twoSum([2,7,11,15], 26), [2,3], msg)
+    
+    def test_givenExample3(self):
+        msg = "Did not pass the given example. "
+        self.assertEqual(twoSum([3, 4], 6), [-1], msg)
+
+
 
 if __name__ == '__main__':
     unittest.main()
