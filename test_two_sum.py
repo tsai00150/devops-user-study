@@ -26,6 +26,11 @@ class testTwoSum(unittest.TestCase):
         self.assertEqual(twoSum([2, 3, 5, 10], 4), [
                          'Error: Two indexes are the same'], msg)
 
+    def test_givenExample5(self):
+        msg = "If the input type is invalid, return error."
+        self.assertEqual(twoSum([5, '6', 8, 9], 13), [
+                         'Error: Input type is invalid'], msg)
+
     # This is just a template; you can change the format whatever you want to have better communication with the developer.
     # def test_<write the test name here>(self):
     #     msg = '''<message when there is an error>
