@@ -33,9 +33,16 @@ class testTwoSum(unittest.TestCase):
         self.assertEqual(twoSum([2,7,11,15], 7), None, msg)
 
     # [2,'7',11,15], or target = False.
+    # Test Input type
     def test_givenExample7(self):
-        msg = "The answer cannot return same indexes"
-        self.assertEqual(twoSum([2,7,11,15], 7), None, msg)
+        msg = "Input type is wrong, should return False"
+        self.assertEqual(twoSum([2,'7',11,15], 9), False, msg)
+
+
+    
+   
+
+    
     
 
 
