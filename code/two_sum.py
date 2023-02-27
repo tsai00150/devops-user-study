@@ -1,4 +1,6 @@
 def twoSum(nums: list, target: int):
+    if (not nums or len(nums) == 1):
+        return
     d = dict()
     for i in range(len(nums)):
         d[nums[i]] = i
@@ -8,5 +10,5 @@ def twoSum(nums: list, target: int):
         if diff in d.keys():
             return [d[each], d[diff]]
 
-nums = [2,7,11,15]
+nums = []
 target = 9
