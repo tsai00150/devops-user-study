@@ -40,7 +40,7 @@ class testTwoSum(unittest.TestCase):
     
     def test_increasing(self):
         msg = "In: [1,2,3,4,5] target: 5 out: [1,2]"
-        self.assertEqual(twoSum([1,2,3,4,5], 5), [1, 2], msg)
+        self.assertEqual(twoSum([1,2,3,4,5], 9), [3, 4], msg)
 
 
     def test_zero(self):
