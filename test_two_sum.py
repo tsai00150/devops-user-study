@@ -16,6 +16,37 @@ class testTwoSum(unittest.TestCase):
         msg = "Did not pass another random example. "
         self.assertEqual(twoSum([2,7,11,15], 26), [2,3], msg)
 
+    def test_no_ans1(self):
+        msg = "No answer"
+        self.assertEqual(twoSum([2,7,11,15], 100), None, msg)
+        
+    def test_no_ans2(self):
+        msg = "No answer "
+        self.assertEqual(twoSum([2,7,11,21], 100), None, msg)
+
+    def test_same_ans1(self):
+        msg = "Wrong answer"
+        self.assertEqual(twoSum([2, 3], 4), None, msg)
+
+    def test_same_ans2(self):
+        msg = "Wrong answer"
+        self.assertEqual(twoSum([3, 3], 6), [0, 1], msg)
+
+
+    def test_diff_in_type(self):
+        msg = "Wrong answer"
+        self.assertEqual(twoSum(['3', 3], 6), [0, 1], msg)
+
+    
+    def test_increasing(self):
+        msg = "Wrong answer"
+        self.assertEqual(twoSum([1,2,3,4,5], 5), [1, 2], msg)
+
+
+    def test_zero(self):
+        msg = "Wrong answer"
+        self.assertEqual(twoSum([1,2,3,4,5], 0), 'Zero detected!', msg)
+        
     # This is just a template; you can change the format whatever you want to have better communication with the developer. 
     # def test_<write the test name here>(self):
     #     msg = '''<message when there is an error>
