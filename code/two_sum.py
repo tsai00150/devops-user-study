@@ -1,16 +1,14 @@
 def twoSum(nums: list, target: int):
     dictionary = {}
-    
-    for i in range(0,len(nums)):
-        if nums[i] in dictionary:
-            dictionary[nums[i]].append(i)
-        else:
-            dictionary[nums[i]] = [i]
-
-    for i in range(0,len(nums)):
-        curr_num = nums[i]
-        diff = target - curr_num
-        if diff in dictionary:
-            return [i, dictionary[diff][0]]
-    
+    for i in range(len(nums)):
+        if type(nums[i]) != int:
+            try:
+                nums[i] = int(nums[i])
+            except:
+                return [-1]
+    d = {}
+    for i in range(len(nums)):
+        if target-nums[i] in d:
+            return [d[target-nums[i]], i]
+        d[nums[i]] = i
     return None
