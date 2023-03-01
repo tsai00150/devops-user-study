@@ -1,5 +1,6 @@
 def twoSum(nums: list, target: int):
-    
+    if type(nums) != list and type(target) != int:
+        return "invalid input types/"
 
     mapping = {}
     for idx, num in enumerate(nums):
@@ -9,8 +10,7 @@ def twoSum(nums: list, target: int):
         if target-num in mapping:
             if mapping[num] != mapping[target-num]:
                 return [mapping[num], mapping[target-num]]
-        else:
-            return None
+ 
     else:
         return None
 
