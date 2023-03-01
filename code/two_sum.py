@@ -10,7 +10,7 @@ def twoSum(nums: list, target: int):
             if mapping[num] != mapping[target-num]:
                 return [mapping[num], mapping[target-num]]
     else:
-        return "There is no solution for nums and target."
+        return None
 
         
 # print(twoSum(nums=[2,7,11,15], target=9))
