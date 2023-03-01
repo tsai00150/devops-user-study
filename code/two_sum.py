@@ -9,6 +9,8 @@ def twoSum(nums: list, target: int):
         if target-num in mapping:
             if mapping[num] != mapping[target-num]:
                 return [mapping[num], mapping[target-num]]
+        else:
+            return None
     else:
         return None
 
