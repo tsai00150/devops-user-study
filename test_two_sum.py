@@ -38,13 +38,15 @@ class testTwoSum(unittest.TestCase):
     
     def test_input2(self):
         msg = "The input format is incorrect"
-        self.assertEqual(twoSum([2,a], 9), None, msg)
+        self.assertEqual(twoSum([2,'a'], 9), None, msg)
 
     def test_output(self):
         msg = "The output format is incorrect"
         self.assertEqual(twoSum([2,7], '9'), None, msg)
     
-    
+    def test_zero(self):
+        msg = "U should return Zero detected!"
+        self.assertEqual(twoSum([2,7], 0), 'Zero detected', msg)
 
     # This is just a template; you can change the format whatever you want to have better communication with the developer. 
     # def test_<write the test name here>(self):
