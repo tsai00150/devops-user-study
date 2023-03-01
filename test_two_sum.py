@@ -15,6 +15,25 @@ class testTwoSum(unittest.TestCase):
     def test_givenExample2(self):
         msg = "Did not pass another random example. "
         self.assertEqual(twoSum([2,7,11,15], 26), [2,3], msg)
+    
+    def test_none1(self):
+        msg = "If there is no answer, return None"
+        self.assertEqual(twoSum([2,3,4], 10), None, msg)
+    
+    def test_none2(self):
+        msg = "If there is no answer, return None"
+        self.assertEqual(twoSum([2,30,40], 100), None, msg)
+    
+    def test_duplicate1(self):
+        msg = "Cannot return the same index"
+        self.assertEqual(twoSum([3,3], 6), [0,1], msg)
+    
+    def test_duplicate2(self):
+        msg = "Cannot return the same index"
+        self.assertEqual(twoSum([10,10], 20), [0,1], msg)
+
+    
+    
 
     # This is just a template; you can change the format whatever you want to have better communication with the developer. 
     # def test_<write the test name here>(self):
