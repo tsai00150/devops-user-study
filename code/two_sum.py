@@ -1,5 +1,5 @@
 def twoSum(nums: list, target: int):
-    if type(nums) != list and type(target) != int:
+    if type(nums) != list[int] and type(target) != int:
         return "invalid input types/"
 
     mapping = {}
