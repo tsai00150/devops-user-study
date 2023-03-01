@@ -32,6 +32,17 @@ class testTwoSum(unittest.TestCase):
         msg = "Cannot return the same index"
         self.assertEqual(twoSum([10,10], 20), [0,1], msg)
 
+    def test_input1(self):
+        msg = "The input format is incorrect"
+        self.assertEqual(twoSum([2,'7'], 9), None, msg)
+    
+    def test_input2(self):
+        msg = "The input format is incorrect"
+        self.assertEqual(twoSum([2,a], 9), None, msg)
+
+    def test_output(self):
+        msg = "The output format is incorrect"
+        self.assertEqual(twoSum([2,7], '9'), None, msg)
     
     
 
